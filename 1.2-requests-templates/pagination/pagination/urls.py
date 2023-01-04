@@ -16,6 +16,8 @@ Including another URLconf
 
 from django.urls import path, include
 
+# КОГДА ДЕЛАЛА ВТОРОЙ РАЗ, то не использовлаа инклуды и все норм работало, т.е. файл urls.py вообще не меняла
+# и все отлично работате
 urlpatterns = [
     path('', include('stations.urls')),
 ]
