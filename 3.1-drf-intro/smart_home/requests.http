@@ -2,13 +2,13 @@
 
 @baseUrl = http://localhost:8000/api
 
-# получение датчиков
+# получение датчиков - OK!!!
 GET {{baseUrl}}/sensors/
 Content-Type: application/json
 
 ###
 
-# создание датчика
+# создание датчика - OK!!!
 POST {{baseUrl}}/sensors/
 Content-Type: application/json
 
@@ -19,7 +19,7 @@ Content-Type: application/json
 
 ###
 
-# обновление датчика
+# обновление датчика - OK! только в POSTMAN, НО!!! в браузере и в restclient VScode не работает. Почему????
 PATCH {{baseUrl}}/sensors/1/
 Content-Type: application/json
 
@@ -29,7 +29,7 @@ Content-Type: application/json
 
 ###
 
-# добавление измерения
+# добавление измерения - OK!!!
 POST {{baseUrl}}/measurements/
 Content-Type: application/json
 
@@ -40,6 +40,6 @@ Content-Type: application/json
 
 ###
 
-# получение информации по датчику
+# получение информации по датчику - OK!!!
 GET {{baseUrl}}/sensors/1/
 Content-Type: application/json
