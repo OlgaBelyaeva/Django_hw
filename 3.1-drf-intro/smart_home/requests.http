@@ -19,7 +19,7 @@ Content-Type: application/json
 
 ###
 
-# обновление датчика - OK! только в POSTMAN, НО!!! в браузере и в restclient VScode не работает. Почему????
+# обновление датчика - OK!!!
 PATCH {{baseUrl}}/sensors/1/
 Content-Type: application/json
 

@@ -27,7 +27,7 @@ class One_sensor_View(RetrieveAPIView):
     queryset = Sensor.objects.all()
     serializer_class = SensorDetailSerializer
 
-    def patch(self, request, pk): #  Работaет только в Postman
+    def patch(self, request, pk):
         sensor = Sensor.objects.get(id=pk)
         serializer = SensorSerializer(instance=sensor, data=request.data, partial=True)
         if serializer.is_valid():
